@@ -2,6 +2,6 @@
 
 Ziel: Mining + Combat spielbar
 
-- Mining
-- Combat
-- Inventar
+- 🔘 Mining
+- 🔘 Combat
+- 🔘 Inventar

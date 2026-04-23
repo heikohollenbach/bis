@@ -26,4 +26,11 @@
       "titleBar.inactiveForeground": "#e7e7e799"
     },
   },
+  "extensions": {
+    "recommendations": [
+      "ms-dotnettools.csdevkit",
+      "ms-azuretools.vscode-containers",
+      "aliasadidev.nugetpackagemanagergui"
+    ]
+  },
 }

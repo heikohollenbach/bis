@@ -2,6 +2,6 @@
 
 Ziel: Stabilität + Skalierung
 
-- Performance
-- Monitoring
-- Beta
+- 🔘 Performance
+- 🔘 Monitoring
+- 🔘 Beta

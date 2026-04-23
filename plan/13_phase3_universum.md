@@ -2,6 +2,6 @@
 
 Ziel: Wirtschaft + Gilden
 
-- Galaxien
-- Gilden
-- Wirtschaft
+- 🔘 Wirtschaft
+- 🔘 Gilden
+- 🔘 Galaxien

@@ -2,20 +2,20 @@
 
 ## Jetzt
 
-- [ ] Datenmodell final
-- [ ] Gameplay Loop testen
+- 🔘 Datenmodell final
+- 🔘 Gameplay Loop testen
 
 ## Kurzfristig
 
-- [ ] Login
-- [ ] Multiplayer Movement
+- 🔘 Login
+- 🔘 Multiplayer Movement
 
 ## Mittelfristig
 
-- [ ] Mining
-- [ ] Combat
+- 🔘 Mining
+- 🔘 Combat
 
 ## Langfristig
 
-- [ ] Gilden
-- [ ] Wirtschaft
+- 🔘 Gilden
+- 🔘 Wirtschaft

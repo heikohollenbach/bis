@@ -4,4 +4,4 @@
 
 ## TODO
 
-- Prototyp bauen
+- 🟣 Prototyp bauen

@@ -1,0 +1,23 @@
+<wpf:ResourceDictionary
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:s="clr-namespace:System;assembly=mscorlib"
+    xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml"
+    xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+
+  <!-- =========================
+       NAMESPACE + NAMING STYLE
+       ========================= -->
+  <s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=BIS/@EntryIndexedValue">BIS</s:String>
+
+  <!-- Optional: erlaubt Uppercase Prefix für Types -->
+  <s:Boolean x:Key="/Default/CodeStyle/Naming/CSharpNaming/Rules/TypeLikeEntities/Rules/=TYPENAME/@EntryIndexedValue/AllowUpperCaseAbbreviations/@EntryValue">True</s:Boolean>
+
+  <!-- =========================
+       NAMING RULE: TYPES
+       ========================= -->
+  <s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Rules/TypeLikeEntities/Rules/=TYPE_NAME/@EntryIndexedValue/Prefix/@EntryValue"></s:String>
+
+  <!-- Standard: PascalCase, aber mit Abbreviation support -->
+  <s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Rules/TypeLikeEntities/Rules/=TYPE_NAME/@EntryIndexedValue/Style/@EntryValue">AaBb</s:String>
+
+</wpf:ResourceDictionary>
