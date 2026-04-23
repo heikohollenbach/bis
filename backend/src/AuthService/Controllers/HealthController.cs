@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace BIS.AuthService.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("[controller]")]
 public class HealthController : ControllerBase
 {
     [HttpGet]

@@ -28,19 +28,19 @@ This is the backend for the BIS Space MMORPG. It's built with ASP.NET Core 8.0 a
 2. **Run services locally (requires PostgreSQL + Redis):**
    ```bash
    # Terminal 1: AuthService
-   cd src/BIS.AuthService
+   cd src/AuthService
    dotnet run
 
    # Terminal 2: PlayerService
-   cd src/BIS.PlayerService
+   cd src/PlayerService
    dotnet run
 
    # Terminal 3: WorldService
-   cd src/BIS.WorldService
+   cd src/WorldService
    dotnet run
 
    # Terminal 4: ChatService
-   cd src/BIS.ChatService
+   cd src/ChatService
    dotnet run
    ```
 
@@ -58,7 +58,7 @@ This is the backend for the BIS Space MMORPG. It's built with ASP.NET Core 8.0 a
 ### Health Check
 
 ```bash
-curl http://localhost:5001/api/health
+curl http://localhost:5001/health
 ```
 
 ## Project Structure
