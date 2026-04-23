@@ -1,11 +1,18 @@
-# 🐳 Docker Setup
+# 🐳 Docker 
 
-- Traefik als Reverse Proxy
-- PostgreSQL
-- Redis
-- GameServer Container
+## Services
 
-Hinweis:
+- traefik
+- gameserver
+- postgres
+- redis
 
-- ARM64 Images nutzen
-- SSD für Daten verwenden
+## Best Practices
+
+- SSD nutzen
+- ARM64 Images
+- Backups einrichten
+
+## Skalierung
+
+- Später: VPS / Kubernetes

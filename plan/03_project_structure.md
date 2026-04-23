@@ -1,7 +1,28 @@
 # 📁 Projektstruktur
 
-client/ → Unity  
-backend/ → .NET  
-infra/ → Docker  
-docs/ → Dokumentation  
-plan/ → Planung  
+## client/
+
+Unity Projekt
+
+- Scripts/
+- Prefabs/
+- Scenes/
+
+## backend/
+
+.NET
+
+- AuthService/
+- PlayerService/
+- WorldService/
+- ChatService/
+
+## infra/
+
+- docker
+- docker-compose 
+- traefik
+
+## plan/
+
+Dokumentation

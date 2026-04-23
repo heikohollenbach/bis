@@ -2,15 +2,15 @@
 
 ## Realtime
 
-- WebSocket (SignalR oder Mirror)
+- WebSocket (SignalR)
+- Events: sofort
 - Tick-basierte Updates
+  - Positions: 10-20 Hz
+- Movement
+- Combat
+- Chat
+- Events
 
-## REST
-
-- Auth
-- Player Daten
-- Trading
-
-## TODO
-
-- Finales Netzwerkmodell festlegen
+## Probleme
+- Latenz
+- Paketverlust

@@ -22,3 +22,9 @@ Dieses Verzeichnis enthält die komplette technische und konzeptionelle Planung 
   - Kritische Vorentscheidungen
 - [08_todos.md](08_todos.md)
   - Offene Aufgaben
+- [09_ideas.md](09_ideas.md)
+  - Ideen & Anmerkungen
+
+## Zielsetzung
+
+Dieser Plan dient als Leitfaden für die Entwicklung des Space MMORPGs. Er soll sicherstellen, dass alle Teammitglieder ein gemeinsames Verständnis der Ziele, der Architektur und der nächsten Schritte haben. Durch die klare Strukturierung und Dokumentation können wir effizienter arbeiten und potenzielle Probleme frühzeitig erkennen und lösen.

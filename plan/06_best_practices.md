@@ -2,20 +2,22 @@
 
 ## Architektur
 
-- Server autoritativ
+- Server autoritativ (Server entscheidet alles)
 - Keine Spiellogik im Client
 
 ## Performance
 
 - Object Pooling
+- Culling
 - Spatial Partitioning
 
 ## Code
 
+- Clean Architecture
 - Repository Pattern
 - Tests
 
 ## Sicherheit
 
 - Rate Limiting
-- Input Validation
+- Validate alles
