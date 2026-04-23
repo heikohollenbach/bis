@@ -3,7 +3,10 @@
 ## Services
 
 - traefik
-- gameserver
+- authservice
+- playerservice
+- worldservice
+- chatservice
 - postgres
 - redis
 

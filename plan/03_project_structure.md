@@ -10,7 +10,7 @@ Unity Projekt
 
 ## backend/
 
-.NET
+.NET Projekte
 
 - AuthService/
 - PlayerService/
@@ -21,8 +21,12 @@ Unity Projekt
 
 - docker
 - docker-compose 
-- traefik
+  - traefik
 
 ## plan/
+
+Planung, Ideen, Phasen
+
+## docs/
 
 Dokumentation
