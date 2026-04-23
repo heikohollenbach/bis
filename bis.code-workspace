@@ -30,7 +30,8 @@
     "recommendations": [
       "ms-dotnettools.csdevkit",
       "ms-azuretools.vscode-containers",
-      "aliasadidev.nugetpackagemanagergui"
+      "aliasadidev.nugetpackagemanagergui",
+      "tchayen.markdown-links"
     ]
   },
 }

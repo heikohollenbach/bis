@@ -75,8 +75,9 @@ backend/
 │   └── ChatService/        # Chat service
 ├── tests/                  # Test projects
 │   ├── AuthService.Tests/  # Authentication service tests
-├── infra/                  # Docker & infrastructure
-├── docs/                   # Documentation
+├── Dockerfile              # Dockerfile
+├── nginx.conf              # Nginx configuration for reverse proxy
+├── docker-compose.yml      # Docker Compose configurations
 └── BIS.sln                 # Solution file
 ```
 
