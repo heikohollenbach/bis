@@ -9,6 +9,20 @@ description: "Workspace instructions for the project. Guides AI assistance"
 - Keep changes minimal and aligned with existing service patterns.
 - Prefer links to project docs over re-stating large blocks of documentation.
 
+## General Guidelines
+
+- Use emojis for task status
+  - 🔘 unknwon, not started, open
+  - 🟣 work in progress, started
+  - 🟢 done
+  - 🔴 blocked, needs attention
+  - 🟡 on hold, waiting for input, planed,
+  - 🟤 won't do, rejected, closed
+  - 🟠 duplicate, invalid
+  - ⚫ other
+- Use markdown formatting for readability (headings, lists, code blocks).
+- When referencing project documentation, link to the relevant file and section instead of copying content.
+
 ## Project Context
 
 `BIS` is a persistent Space-MMORPG backend built with .NET 10.
@@ -152,6 +166,7 @@ xUnit + Moq; test projects are named `{Project}.Tests`.
 - Do not suppress warnings with `#pragma` unless there is no other option.
 - Do not skip `async`/`await` for database or I/O calls.
 - Do not use `== null` or `!= null` with nullable reference types.
+- Do not use `- [ ]` in markdown, use emojis instead for task status.
 
 ## Common Pitfalls
 
