@@ -2,10 +2,25 @@
   "folders": [
     {
       "path": ".",
-      "name": "Git"
+      "name": "Git",
     },
   ],
   "settings": {
+    "prettier.printWidth": 160,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always",
+    },
+    "editor.linkedEditing": true,
+    "explorer.fileNesting.enabled": true,
+    "containers.containers.groupBy": "Compose Project Name",
+    "containers.containers.label": "ContainerName",
+    "containers.containers.description": ["Image", "Status"],
+    "containers.containers.sortBy": "Label",
+    "search.exclude": {
+      "**/bin": true,
+      "**/obj": true,
+    },
     "workbench.colorCustomizations": {
       "activityBar.activeBackground": "#1a1a1a",
       "activityBar.background": "#1a1a1a",
@@ -28,10 +43,18 @@
   },
   "extensions": {
     "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "rvest.vs-code-prettier-eslint",
+      "hediet.vscode-drawio",
+      "johnpapa.vscode-peacock",
       "ms-dotnettools.csdevkit",
+      "ms-dotnettools.csharp",
+      "sonarsource.sonarlint-vscode",
+      "pkief.material-icon-theme",
       "ms-azuretools.vscode-containers",
       "aliasadidev.nugetpackagemanagergui",
-      "tchayen.markdown-links"
-    ]
+      "tchayen.markdown-links",
+    ],
   },
 }

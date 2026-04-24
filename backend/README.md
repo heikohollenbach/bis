@@ -4,10 +4,11 @@
 
 This is the backend for the BIS Space MMORPG. It's built with ASP.NET Core 8.0 and includes 4 microservices:
 
-- **AuthService** — User authentication and session management
-- **PlayerService** — Player progression, inventory, and ship management
-- **WorldService** — World generation, movement, and combat simulation
-- **ChatService** — In-game chat and messaging
+- **AuthService** - User authentication and session management
+- **PlayerService** - Player progression, inventory, and ship management
+- **WorldService** - World generation, movement, and combat simulation
+- **ChatService** - In-game chat and messaging
+- **WebSerive** - Landingpage
 
 ## Quick Start
 
@@ -21,11 +22,13 @@ This is the backend for the BIS Space MMORPG. It's built with ASP.NET Core 8.0 a
 ### Local Development
 
 1. **Build the solution:**
+
    ```bash
    dotnet build
    ```
 
 2. **Run services locally (requires PostgreSQL + Redis):**
+
    ```bash
    # Terminal 1: AuthService
    cd src/AuthService
@@ -45,15 +48,16 @@ This is the backend for the BIS Space MMORPG. It's built with ASP.NET Core 8.0 a
    ```
 
 3. **Or run with Docker Compose (easiest):**
+
    ```bash
    docker-compose up
    ```
 
    Services will be available at:
-   - AuthService: http://localhost:5001
-   - PlayerService: http://localhost:5002
-   - WorldService: http://localhost:5003
-   - ChatService: http://localhost:5004
+   - AuthService: <http://localhost:5001>
+   - PlayerService: <http://localhost:5002>
+   - WorldService: <http://localhost:5003>
+   - ChatService: <http://localhost:5004>
 
 ### Health Check
 
@@ -63,7 +67,7 @@ curl http://localhost:5001/health
 
 ## Project Structure
 
-```
+```text
 backend/
 ├── src/
 │   ├── Common/             # Shared utilities, DTOs, exceptions
