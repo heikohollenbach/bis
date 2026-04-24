@@ -28,9 +28,9 @@ description: "Workspace instructions for the project. Guides AI assistance"
 `BIS` is a persistent Space-MMORPG backend built with .NET 10.
 
 - Vision and roadmap: [plan/README.md](../plan/README.md)
-- Product overview: [plan/00_overview.md](../plan/00_overview.md)
-- Architecture decisions: [plan/01_architecture.md](../plan/01_architecture.md)
-- Project layout: [plan/03_project_structure.md](../plan/03_project_structure.md)
+- Product overview: [plan/00-overview.md](../plan/00-overview.md)
+- Architecture decisions: [plan/01-architecture.md](../plan/01-architecture.md)
+- Project layout: [plan/03-project-structure.md](../plan/03-project-structure.md)
 
 Tech stack: ASP.NET Core 10, EF Core + PostgreSQL, Redis, SignalR, Docker Compose, Blazor (WebService + Radzen).
 

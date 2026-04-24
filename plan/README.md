@@ -4,27 +4,27 @@ Dieses Verzeichnis enthält die komplette technische und konzeptionelle Planung 
 
 ## Struktur
 
-- [00_overview.md](00_overview.md)
+- [00-overview.md](00-overview.md)
   - Gesamtüberblick & Core Konzept
-- [01_architecture.md](01_architecture.md)
+- [01-architecture.md](01-architecture.md)
   - Systemarchitektur
-- [02_phases.md](02_phases.md)
+- [02-phases.md](02-phases.md)
   - Entwicklungsphasen
-- [03_project_structure.md](03_project_structure.md)
+- [03-project-structure.md](03-project-structure.md)
   - Repository-Struktur
-- [04_docker_setup.md](04_docker_setup.md)
+- [04-docker-setup.md](04-docker-setup.md)
   - Infrastruktur
-- [05_network.md](05_network.md)
+- [05-network.md](05-network.md)
   - Netzwerk & Protokoll
-- [06_best_practices.md](06_best_practices.md)
+- [06-best-practices.md](06-best-practices.md)
   - Best Practices
-- [07_todos.md](07_todos.md)
+- [07-todos.md](07-todos.md)
   - Offene Aufgaben
-- [08_ideas.md](08_ideas.md)
+- [08-ideas.md](08-ideas.md)
 
 ## Phasen
 
-[Phasen](02_phases.md)
+[Phasen](02-phases.md)
 
 ## Zielsetzung
 
