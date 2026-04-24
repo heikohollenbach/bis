@@ -2,6 +2,7 @@ using Serilog;
 using BIS.Common.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Configuration.AddBaseConfiguration();
 
 // Configure Serilog
 Log.Logger = new LoggerConfiguration()

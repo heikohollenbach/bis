@@ -1,8 +1,10 @@
 using BIS.WebService.Components;
+using BIS.Common.Extensions;
 using Radzen;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Configuration.AddBaseConfiguration();
 
 // Configure Serilog
 Log.Logger = new LoggerConfiguration()
