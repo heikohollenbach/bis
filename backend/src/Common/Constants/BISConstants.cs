@@ -30,4 +30,7 @@ public static class BISConstants
     // Chat
     public const int MAX_MESSAGE_LENGTH = 500;
     public const int CHAT_RATE_LIMIT = 5; // messages per second
+
+    // Infrastructure
+    public const string CORS_POLICY_ALLOW_ALL = "AllowAll";
 }
