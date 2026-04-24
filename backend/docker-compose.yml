@@ -39,6 +39,23 @@ services:
       timeout: 5s
       retries: 5
 
+  web-service:
+    image: bis-web-service:1.0.0
+    container_name: bis-web-service
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__DefaultConnection: Server=postgres;Port=5432;Database=bis_web;User Id=postgres;Password=postgres;
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:8080/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
   auth-service:
     image: bis-auth-service:1.0.0
     container_name: bis-auth-service

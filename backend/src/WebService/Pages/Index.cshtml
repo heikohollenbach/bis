@@ -1,0 +1,74 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "BIS – Being in Space";
+}
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BIS – Being in Space</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>🚀 BIS – Being in Space</h1>
+            <p class="subtitle">
+                Erkunde das Universum, baue deine Existenz auf und überlebe im Weltraum.
+            </p>
+
+            <div class="cta-group">
+                <a href="#cta" class="btn primary">Jetzt starten</a>
+                <a href="#features" class="btn secondary">Mehr erfahren</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Features</h2>
+
+            <div class="grid">
+                <div class="card">
+                    <h3>🌌 Offene Galaxie</h3>
+                    <p>Reise frei durch ein dynamisches Universum mit unendlichen Möglichkeiten.</p>
+                </div>
+
+                @* <div class="card">
+                    <h3>🛰️ Basisbau</h3>
+                    <p>Errichte Stationen, erweitere deine Infrastruktur und sichere Ressourcen.</p>
+                </div> *@
+
+                <div class="card">
+                    <h3>⚡ Echtzeit-System</h3>
+                    <p>Erlebe eine persistente Welt mit anderen Spielern und Live-Events.</p>
+                </div>
+
+                <div class="card">
+                    <h3>🚀 Interstellar Travel</h3>
+                    <p>Springe zwischen Sternensystemen und entdecke neue Welten.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="cta">
+        <div class="container">
+            <h2>Bereit für dein Abenteuer?</h2>
+            <p>Starte jetzt deine Reise im BIS-Universum.</p>
+
+            <a href="/auth/login" class="btn primary large">
+                Account erstellen
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>
