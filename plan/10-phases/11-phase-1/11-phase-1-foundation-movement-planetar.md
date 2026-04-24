@@ -5,6 +5,7 @@
 Dieses Steuerungskonzept ist für ein **3rd-Person-3D-Raumschiff-Gameplay auf Android** optimiert.
 
 Der Fokus liegt auf:
+
 - einfacher Bedienbarkeit
 - gutem Raumgefühl
 - flüssigem Flugverhalten
@@ -42,20 +43,20 @@ Das Schiff soll sich **wie ein echtes Raumschiff im Raum bewegen**, nicht wie ei
 
 Der linke Bereich steuert die Bewegung entlang der Flugrichtung.
 
-#### Eingaben:
+#### Eingaben
 
 - ⬆️ Finger nach oben: mehr Vorwärts-Schub
 - ⬇️ Finger nach unten: Bremsen / Rückwärts
 - optional:
   - leichte Links/Rechts-Neigung für Strafe-Bewegung
 
-#### Verhalten:
+#### Verhalten
 
 - kontinuierlicher Schub (kein „Step Movement“)
 - Geschwindigkeit baut sich dynamisch auf
 - Trägheit wirkt wie im Weltraum
 
-#### Ziel:
+#### Ziel
 
 Der Spieler kontrolliert **nur die Energie / Geschwindigkeit**, nicht die exakte Position.
 
@@ -65,20 +66,20 @@ Der Spieler kontrolliert **nur die Energie / Geschwindigkeit**, nicht die exakte
 
 Der rechte Bereich steuert die Richtung des Raumschiffs.
 
-#### Eingaben:
+#### Eingaben
 
 - ➡️ nach rechts ziehen: Schiff dreht sich nach rechts (Yaw)
 - ⬅️ nach links ziehen: Schiff dreht sich nach links (Yaw)
 - ⬆️ nach oben ziehen: Nase hebt sich (Pitch up)
 - ⬇️ nach unten ziehen: Nase senkt sich (Pitch down)
 
-#### Verhalten:
+#### Verhalten
 
 - sanfte Rotation (kein sofortiges Snapping)
 - „inertia based turning“ (Trägheit beim Drehen)
 - Begrenzung der Pitch-Winkel gegen Überdrehen
 
-#### Ziel:
+#### Ziel
 
 Der Spieler bestimmt **wohin das Schiff fliegt**, nicht die exakte Position.
 
@@ -92,7 +93,7 @@ Der Spieler bestimmt **wohin das Schiff fliegt**, nicht die exakte Position.
 - leichte Trägheit (Drag + Angular Drag)
 - kein realistischer Orbit-Simulator → eher Arcade-Space
 
-### Eigenschaften:
+### Eigenschaften
 
 - sanftes Beschleunigen
 - langsames Abbremsen

@@ -1,6 +1,8 @@
-# BIS: Being in Space – Meta Travel System (Intergalaxy)
+# Meta Travel System
 
 ## 🎯 Ziel des Systems
+
+Interstellar
 
 Das Meta Travel System ermöglicht Reisen **zwischen Sonnensystemen / Galaxien**, ohne dass der Spieler diese physisch durchfliegen muss.
 
@@ -22,7 +24,7 @@ Das Spiel besteht aus drei Ebenen der Fortbewegung:
 - freies Springen zu Punkten innerhalb eines Systems
 - schnelle Navigation ohne lange Flugzeiten
 
-### 🌠 3. Meta Travel (Intergalaxy)
+### 🌠 3. Meta Travel (Interstellar)
 
 - Sprung zwischen Sonnensystemen
 - kein physischer Raumflug
@@ -121,13 +123,15 @@ Dauer:
 
 ## 🧩 Struktur des Universums
 
-### Systeme bestehen aus:
+### Systeme bestehen aus
+
 - Stern
 - Planeten
 - Points of Interest
 - lokalen Warp-Zielen
 
-### Galaxie besteht aus:
+### Galaxie besteht aus
+
 - vielen Systemen
 - optional Clustern / Regionen
 

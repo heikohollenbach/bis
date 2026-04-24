@@ -1,4 +1,4 @@
-# Phase 4 – Polish
+# 🖌️ Phase 4: Polish
 
 Ziel: Stabilität + Skalierung
 

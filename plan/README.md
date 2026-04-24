@@ -1,4 +1,4 @@
-# 🚀 Space MMORPG – Implementierungsplan
+# Plan
 
 Dieses Verzeichnis enthält die komplette technische und konzeptionelle Planung des Projekts.
 
@@ -18,19 +18,14 @@ Dieses Verzeichnis enthält die komplette technische und konzeptionelle Planung 
   - Netzwerk & Protokoll
 - [06_best_practices.md](06_best_practices.md)
   - Best Practices
-- [07_phase0_design.md](07_phase0_design.md)
-  - Kritische Vorentscheidungen
-- [08_todos.md](08_todos.md)
+- [07_todos.md](07_todos.md)
   - Offene Aufgaben
-- [09_ideas.md](09_ideas.md)
-  - Ideen & Anmerkungen
+- [08_ideas.md](08_ideas.md)
+
+## Phasen
+
+[Phasen](02_phases.md)
 
 ## Zielsetzung
 
 Dieser Plan dient als Leitfaden für die Entwicklung des Space MMORPGs. Er soll sicherstellen, dass alle Teammitglieder ein gemeinsames Verständnis der Ziele, der Architektur und der nächsten Schritte haben. Durch die klare Strukturierung und Dokumentation können wir effizienter arbeiten und potenzielle Probleme frühzeitig erkennen und lösen.
-
-## Bewegung
-
-- [Planetare Bewegung (Gameplay)](movement/01_movement-planetar.md)
-- [Interplanetar](movement/02_movement-interplanetar.md)
-- [Interstellar](movement/03_movement-interstellar.md)

@@ -1,4 +1,4 @@
-# Phase 1: Foundation - Unity Projekt
+# Unity Projekt Skelett
 
 **Ziel**: Ein wartbares Unity-Client-Fundament nach Best Practices und Clean Architecture aufsetzen, das direkt zu den Backend-Services passt und als Basis fuer Movement (Phase 1) sowie Mining/Combat/Inventar (Phase 2) dient.
 

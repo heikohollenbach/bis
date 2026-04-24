@@ -1,4 +1,4 @@
-# Phase 1: Foundation — Authentication
+# Authentication
 
 **Ziel**: Spieler kann sich registrieren, einloggen und validiert sein
 

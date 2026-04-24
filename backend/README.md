@@ -1,4 +1,4 @@
-# BIS Backend
+# Backend
 
 ## Overview
 

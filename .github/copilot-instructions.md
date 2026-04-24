@@ -3,77 +3,84 @@ name: copilot-instructions
 description: "Workspace instructions for the project. Guides AI assistance"
 ---
 
-## User specific guidelines
+## Priority Rules
 
-- **Always use the user instructions** von `~\.copilot\instructions\*`
-
----
+- **Always apply user-level instructions from `~/.copilot/instructions/*` first.**
+- Keep changes minimal and aligned with existing service patterns.
+- Prefer links to project docs over re-stating large blocks of documentation.
 
 ## Project Context
 
-**BIS** is a persistent Space-MMORPG backend written in C# / .NET 10. See[Plan README](../plan/README.md) and [plan/00_overview.md](../plan/00_overview.md) for the vision and [plan/01_architecture.md](../plan/01_architecture.md) for architecture decisions.
+`BIS` is a persistent Space-MMORPG backend built with .NET 10.
 
-**Tech stack**: ASP.NET Core 10, SignalR, PostgreSQL (EF Core), Redis, Docker Compose, Blazor (WebService UI with Radzen.Blazor).
+- Vision and roadmap: [plan/README.md](../plan/README.md)
+- Product overview: [plan/00_overview.md](../plan/00_overview.md)
+- Architecture decisions: [plan/01_architecture.md](../plan/01_architecture.md)
+- Project layout: [plan/03_project_structure.md](../plan/03_project_structure.md)
 
----
+Tech stack: ASP.NET Core 10, EF Core + PostgreSQL, Redis, SignalR, Docker Compose, Blazor (WebService + Radzen).
 
-## Quick Start
+## Build, Test, Run
+
+Use these as the default commands:
 
 ```powershell
-dotnet build backend                    # build solution
-dotnet test backend                     # run all tests
-cd backend && docker-compose up         # full stack (nginx + postgres + redis + all services)
+dotnet build backend
+dotnet test backend
+cd backend; docker-compose up
 ```
 
----
+For service-only local runs:
 
-## Architecture: Services
+```powershell
+cd backend/src/AuthService; dotnet run
+cd backend/src/PlayerService; dotnet run
+cd backend/src/WorldService; dotnet run
+cd backend/src/ChatService; dotnet run
+cd backend/src/WebService; dotnet run
+```
 
-See [plan/03_project_structure.md](../plan/03_project_structure.md) for full layout.
+## Service Boundaries
 
-| Service         | Role                                  | DB           |
-| --------------- | ------------------------------------- | ------------ |
-| `AuthService`   | JWT auth, users, sessions             | `bis_auth`   |
-| `PlayerService` | Ships, inventory, guilds, progression | `bis_player` |
-| `WorldService`  | World gen, zones, combat, NPCs        | `bis_world`  |
-| `ChatService`   | Messaging                             | `bis_chat`   |
-| `WebService`    | Blazor Razor Components UI            | —            |
+- `AuthService`: JWT auth, users, sessions (`bis_auth`)
+- `PlayerService`: ships, inventory, progression (`bis_player`)
+- `WorldService`: zones, combat, NPC/world logic (`bis_world`)
+- `ChatService`: messaging (`bis_chat`)
+- `WebService`: Blazor server UI (no dedicated DB)
 
-**Shared libraries** (not services):
+Shared projects:
 
-| Project  | Purpose                                                                 |
-| -------- | ----------------------------------------------------------------------- |
-| `Common` | DI bootstrap, logging, CORS, config, constants, enums, `IRepository<T>` |
-| `Domain` | EF entities: `BaseEntity`, `User`, `Ship`, `Resource`                   |
-| `Data`   | `BISDbContext`, generic `Repository<T>`                                 |
+- `Common`: shared extensions, logging, CORS, constants, cross-service utilities
+- `Domain`: entities and domain model
+- `Data`: `BISDbContext` and repository implementations
 
----
+## Program.cs Patterns
 
-## Bootstrap Pattern
-
-Every service Program.cs follows this exact pattern — do not deviate:
+API services (`AuthService`, `PlayerService`, `WorldService`, `ChatService`) should keep this shape:
 
 ```csharp
-builder.Configuration.AddBaseConfiguration();   // loads appsettings.Base.json from Common
-builder.AddBISLogging();                         // Serilog
-builder.Services.AddBISApiServices();            // Controllers, Swagger, SignalR, CORS
-builder.Services.Add{Service}Services(config);  // service-specific DI (Common/Extensions/ServiceExtensions.cs)
+builder.Configuration.AddBaseConfiguration();
+builder.AddBISLogging();
+builder.Services.AddBISApiServices();
+builder.Services.Add{Service}Services(builder.Configuration);
 
-app.UseBISApiPipeline();                         // Swagger (dev), CORS, auth, routing
-app.RunWithLogging("ServiceName");               // structured startup/shutdown logging
+app.UseBISApiPipeline();
+app.RunWithLogging("ServiceName");
 ```
 
-Service-specific registration goes in `Common/Extensions/ServiceExtensions.cs` (`Add{Service}Services()`), not inline in `Program.cs`.
+`WebService` is intentionally different (Blazor pipeline). Current implementation uses `AddRazorComponents().AddInteractiveServerComponents()` and `AddRadzenComponents()`.
 
----
+## Code Conventions (Project-Specific)
 
-## WebService (Blazor)
+- Namespace root: `BIS.{ProjectName}`
+- Naming: PascalCase for public members, camelCase for locals/private fields, `I` prefix for interfaces, `E` prefix for enums
+- Null checks: `is null` / `is not null` only
+- Style: file-scoped namespaces, single-line `using`, newline before `{`
+- Public controller/service methods require XML doc comments
+- Prefer `nameof`, pattern matching, switch expressions, and async I/O end-to-end
+- Controllers must not access repositories directly; go through services
 
-- Blazor Razor Components with `InteractiveServer` render mode.
-- Radzen.Blazor: register services individually in `Program.cs` (`DialogService`, `NotificationService`, `TooltipService`, `ContextMenuService`, `ThemeService`) — **not** `AddRadzenComponents()`.
-- Base Radzen style: `_content/Radzen.Blazor/css/material-base.css` in `Components/App.razor`.
-
----
+Note: Current codebase entities are plain names like `User`, `Ship`, `Resource` (do not force `BO` suffix where not already used).
 
 ## Coding Conventions
 
@@ -145,3 +152,9 @@ xUnit + Moq; test projects are named `{Project}.Tests`.
 - Do not suppress warnings with `#pragma` unless there is no other option.
 - Do not skip `async`/`await` for database or I/O calls.
 - Do not use `== null` or `!= null` with nullable reference types.
+
+## Common Pitfalls
+
+- Keep Windows-compatible commands when suggesting shell usage.
+- `backend/README.md` contains outdated version text in places; prefer `.csproj` target frameworks as source of truth.
+- `Common/Extensions/ServiceExtensions.cs` currently contains service-registration placeholders; follow established extension registration style when implementing.

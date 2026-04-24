@@ -1,4 +1,4 @@
-# Phase 2 – Core Gameplay
+# 🕹️ Phase 2: Core Gameplay
 
 Ziel: Mining + Combat spielbar
 

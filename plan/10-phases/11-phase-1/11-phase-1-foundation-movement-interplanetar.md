@@ -1,10 +1,11 @@
-# Freies Warp-System im Sonnensystem
+# Freies Warp-System
 
 ## 🎯 Ziel des Systems
 
 Das Warp-System ermöglicht dem Spieler, sich **frei innerhalb des Sonnensystems zu bewegen**, ohne lange Strecken manuell fliegen zu müssen.
 
 Der Spieler kann:
+
 - jeden Punkt im Sonnensystem anwählen
 - direkt dorthin springen (Warp)
 - anschließend wieder in den normalen Flugmodus wechseln
@@ -40,11 +41,13 @@ Das Spiel trennt zwei Bewegungsarten:
 ### 2. Ziel auswählen
 
 Der Spieler kann:
+
 - Planeten auswählen
 - Stationen auswählen
 - freie Punkte im Raum anklicken
 
 Wichtig:
+
 - Es muss möglich sein, **auch ins „Leere“ zu klicken**
 - Das erzeugt eine freie Zielposition im Raum
 
@@ -60,12 +63,14 @@ Wichtig:
 ### 4. Warp-Sequenz
 
 Während des Warps:
+
 - Eingaben werden deaktiviert
 - Schiff richtet sich automatisch zum Ziel aus
 - Kamera fokussiert das Schiff
 - visueller Warp-Effekt wird abgespielt
 
 Dauer:
+
 - kurz halten (ca. 1–3 Sekunden)
 
 ---
@@ -84,10 +89,12 @@ Dauer:
 Warp soll nur für größere Distanzen genutzt werden.
 
 Regel:
+
 - kurze Distanz → normales Fliegen
 - große Distanz → Warp verfügbar
 
 Ziel:
+
 - Spieler nutzt beide Systeme sinnvoll kombiniert
 
 ---
@@ -113,6 +120,7 @@ Ziel:
 ## 🧲 Snap-System (optional)
 
 Wenn der Spieler nahe an Objekten klickt:
+
 - Planeten
 - Stationen
 - Missionsziele
