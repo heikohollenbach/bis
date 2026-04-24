@@ -3,6 +3,10 @@ name: copilot-instructions
 description: "Workspace instructions for the project. Guides AI assistance"
 ---
 
+## User specific guidelines
+
+- **Always use the user instructions** von `~\.copilot\instructions\*`
+
 ## Coding Conventions
 
 - **Classes / Methods / Public members**: `PascalCase` (e.g. `MachineService`)
@@ -53,7 +57,6 @@ xUnit + Moq; test projects are named `{Project}.Tests`.
 - No `// Arrange / Act / Assert` comments.
 - Mock dependencies with Moq; never instantiate real databases in unit tests.
 - Copy style from the nearest existing test file (attribute choice, async signatures).
-- See [Integration test notes](../WebApp.IntegrationTests/System/Docs/integration-tests.md) for integration test setup.
 
 ---
 
