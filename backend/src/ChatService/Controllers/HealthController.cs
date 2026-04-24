@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace BIS.ChatService.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("health")]
 public class HealthController : ControllerBase
 {
     [HttpGet]

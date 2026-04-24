@@ -17,6 +17,7 @@
     "containers.containers.label": "ContainerName",
     "containers.containers.description": ["Image", "Status"],
     "containers.containers.sortBy": "Label",
+    "csharp.debug.logging.moduleLoad": false,
     "search.exclude": {
       "**/bin": true,
       "**/obj": true,

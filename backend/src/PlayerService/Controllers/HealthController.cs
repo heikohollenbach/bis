@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace BIS.PlayerService.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("health")]
 public class HealthController : ControllerBase
 {
     [HttpGet]
