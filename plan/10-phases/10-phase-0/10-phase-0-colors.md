@@ -4,9 +4,9 @@
 
 ## Referenzpalette (SVG)
 
-Siehe [`10-phase-0-farben.svg`](10-phase-0-farben.svg) für eine visuelle Übersicht.
+Siehe [`10-phase-0-farben.svg`](10-phase-0-colors.svg) für eine visuelle Übersicht.
 
-![10-phase-0-farben.svg](10-phase-0-farben.svg)
+![10-phase-0-farben.svg](10-phase-0-colors.svg)
 
 ---
 
