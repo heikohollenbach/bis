@@ -6,13 +6,13 @@
     <NotFound>
         <PageTitle>Seite nicht gefunden</PageTitle>
         <LayoutView Layout="typeof(MainLayout)">
-            <section class="features">
-                <div class="container">
-                    <h1>Seite nicht gefunden</h1>
-                    <p>Diese Route existiert nicht im BIS-WebService.</p>
-                    <a href="/" class="btn primary">Zur Startseite</a>
-                </div>
-            </section>
+            <RadzenCard>
+                <RadzenStack Gap="0.75rem" AlignItems="AlignItems.Start">
+                    <RadzenText TextStyle="TextStyle.H4" TagName="TagName.H1">Seite nicht gefunden</RadzenText>
+                    <RadzenText TextStyle="TextStyle.Body2">Diese Route existiert nicht im BIS-WebService.</RadzenText>
+                    <a href="/"><RadzenButton Text="Zur Startseite" ButtonStyle="ButtonStyle.Primary" /></a>
+                </RadzenStack>
+            </RadzenCard>
         </LayoutView>
     </NotFound>
 </Router>

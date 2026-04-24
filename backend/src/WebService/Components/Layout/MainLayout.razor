@@ -1,13 +1,26 @@
 @inherits LayoutComponentBase
 
-<div class="container">
-    <main role="main" class="pb-3">
-        @Body
-    </main>
-</div>
+<RadzenComponents />
 
-<div class="border-top footer2">
-    <div class="container">
-        © @DateTime.Now.Year BIS - Being in Space - <a href="/privacy">Privacy</a>
-    </div>
-</div>
+<RadzenLayout Style="min-height: 100vh;">
+    <RadzenHeader>
+        <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.SpaceBetween" Gap="1rem" Style="padding: 1rem 1.5rem;">
+            <RadzenLabel>BIS - Being in Space</RadzenLabel>
+            <RadzenLink Path="/privacy" Text="Privacy" />
+        </RadzenStack>
+    </RadzenHeader>
+
+    <RadzenBody Style="padding: 1.5rem;">
+        <RadzenDialog />
+        <RadzenNotification />
+        <RadzenContextMenu />
+        <RadzenTooltip />
+        @Body
+    </RadzenBody>
+
+    <RadzenFooter>
+        <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Center" Style="padding: 1rem;">
+            <RadzenText TextStyle="TextStyle.Body2">© @DateTime.Now.Year BIS - Being in Space</RadzenText>
+        </RadzenStack>
+    </RadzenFooter>
+</RadzenLayout>
