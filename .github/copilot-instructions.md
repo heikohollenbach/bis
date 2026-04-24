@@ -7,6 +7,74 @@ description: "Workspace instructions for the project. Guides AI assistance"
 
 - **Always use the user instructions** von `~\.copilot\instructions\*`
 
+---
+
+## Project Context
+
+**BIS** is a persistent Space-MMORPG backend written in C# / .NET 10. See[Plan README](../plan/README.md) and [plan/00_overview.md](../plan/00_overview.md) for the vision and [plan/01_architecture.md](../plan/01_architecture.md) for architecture decisions.
+
+**Tech stack**: ASP.NET Core 10, SignalR, PostgreSQL (EF Core), Redis, Docker Compose, Blazor (WebService UI with Radzen.Blazor).
+
+---
+
+## Quick Start
+
+```powershell
+dotnet build backend                    # build solution
+dotnet test backend                     # run all tests
+cd backend && docker-compose up         # full stack (nginx + postgres + redis + all services)
+```
+
+---
+
+## Architecture: Services
+
+See [plan/03_project_structure.md](../plan/03_project_structure.md) for full layout.
+
+| Service         | Role                                  | DB           |
+| --------------- | ------------------------------------- | ------------ |
+| `AuthService`   | JWT auth, users, sessions             | `bis_auth`   |
+| `PlayerService` | Ships, inventory, guilds, progression | `bis_player` |
+| `WorldService`  | World gen, zones, combat, NPCs        | `bis_world`  |
+| `ChatService`   | Messaging                             | `bis_chat`   |
+| `WebService`    | Blazor Razor Components UI            | —            |
+
+**Shared libraries** (not services):
+
+| Project  | Purpose                                                                 |
+| -------- | ----------------------------------------------------------------------- |
+| `Common` | DI bootstrap, logging, CORS, config, constants, enums, `IRepository<T>` |
+| `Domain` | EF entities: `BaseEntity`, `User`, `Ship`, `Resource`                   |
+| `Data`   | `BISDbContext`, generic `Repository<T>`                                 |
+
+---
+
+## Bootstrap Pattern
+
+Every service Program.cs follows this exact pattern — do not deviate:
+
+```csharp
+builder.Configuration.AddBaseConfiguration();   // loads appsettings.Base.json from Common
+builder.AddBISLogging();                         // Serilog
+builder.Services.AddBISApiServices();            // Controllers, Swagger, SignalR, CORS
+builder.Services.Add{Service}Services(config);  // service-specific DI (Common/Extensions/ServiceExtensions.cs)
+
+app.UseBISApiPipeline();                         // Swagger (dev), CORS, auth, routing
+app.RunWithLogging("ServiceName");               // structured startup/shutdown logging
+```
+
+Service-specific registration goes in `Common/Extensions/ServiceExtensions.cs` (`Add{Service}Services()`), not inline in `Program.cs`.
+
+---
+
+## WebService (Blazor)
+
+- Blazor Razor Components with `InteractiveServer` render mode.
+- Radzen.Blazor: register services individually in `Program.cs` (`DialogService`, `NotificationService`, `TooltipService`, `ContextMenuService`, `ThemeService`) — **not** `AddRadzenComponents()`.
+- Base Radzen style: `_content/Radzen.Blazor/css/material-base.css` in `Components/App.razor`.
+
+---
+
 ## Coding Conventions
 
 - **Classes / Methods / Public members**: `PascalCase` (e.g. `MachineService`)
