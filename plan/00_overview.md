@@ -1,7 +1,9 @@
 # 🌌 Überblick
 
 ## Vision
+
 Ein persistentes Space-MMORPG mit Fokus auf:
+
 - Kooperation (Crew & Gilden)
 - Progression über Schiffe
 - Wirtschaft & Kontrolle von Systemen
@@ -43,6 +45,7 @@ Explore → Mine → Build → Fight → Trade → Expand → Repeat
 - Raspberry Pi 5
 
 ## USP
+
 - Spieler besitzt ein Schiff statt eines Charakter, das mit Fortschritt wächst
   - Ausbau in unterschideliche richtungen möglich (Kampf, Handel, Erkundung)
 - Dynamische Wirtschaft & Politik durch Spielerinteraktionen

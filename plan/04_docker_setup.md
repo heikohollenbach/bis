@@ -2,13 +2,14 @@
 
 ## Services
 
-- traefik
-- authservice
-- playerservice
-- worldservice
-- chatservice
+- nginx
 - postgres
 - redis
+- authservice
+- chatservice
+- playerservice
+- webservice
+- worldservice
 
 ## Best Practices
 

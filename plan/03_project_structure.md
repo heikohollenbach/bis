@@ -13,15 +13,13 @@ Unity Projekt
 .NET Projekte
 
 - AuthService/
+- ChatService/
+- Common/
+- Data/
+- Domain/
 - PlayerService/
 - WorldService/
-- ChatService/
-
-## infra/
-
-- docker
-- docker-compose 
-  - traefik
+- WebService/
 
 ## plan/
 
