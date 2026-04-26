@@ -57,6 +57,8 @@
       "ms-azuretools.vscode-containers",
       "aliasadidev.nugetpackagemanagergui",
       "tchayen.markdown-links",
+      "visualstudiotoolsforunity.vstuc",
+      "slevesque.vscode-3dviewer",
     ],
   },
 }
