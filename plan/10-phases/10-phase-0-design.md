@@ -8,11 +8,11 @@
 
 ## Cooperate Identity
 
-- 🔘 Logo
 - 🟢 [Farben](10-phase-0/10-phase-0-colors.md)
-- 🔘 Schriftarten
-- 🔘 Icons
-- 🔘 Grafiken
+- 🟢 [Schriftarten](10-phase-0/10-phase-0-fonts.md)
+- 🟢 [Icons](10-phase-0/10-phase-0-icons.md)
+- 🟣 [Models](10-phase-0/10-phase-0-models.md)
 - 🔘 Design System
 - 🔘 Style Guide
+- 🔘 Logo
 - 🔘 UI Kit
