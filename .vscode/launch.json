@@ -1,0 +1,119 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "All",
+      "configurations": ["AuthService (dll)", "ChatService (dll)", "PlayerService (dll)", "WebService (dll)", "WorldService (dll)"],
+      "preLaunchTask": "build",
+      "stopAll": true,
+      "presentation": {
+        "group": "00"
+      }
+    }
+  ],
+  "configurations": [
+    {
+      "name": "AuthService (dll)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/src/AuthService/bin/Debug/net10.0/BIS.AuthService.dll",
+      "cwd": "${workspaceFolder}/backend/src/AuthService",
+      "args": [],
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://0.0.0.0:5001"
+      },
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "Now listening on:.*http://[^\\s:]+:([0-9]+).*",
+        "uriFormat": "http://localhost:%s/swagger"
+      },
+      "presentation": {
+        "group": "01"
+      }
+    },
+    {
+      "name": "ChatService (dll)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/src/ChatService/bin/Debug/net10.0/BIS.ChatService.dll",
+      "cwd": "${workspaceFolder}/backend/src/ChatService",
+      "args": [],
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://0.0.0.0:5002"
+      },
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "Now listening on:.*http://[^\\s:]+:([0-9]+).*",
+        "uriFormat": "http://localhost:%s/swagger"
+      },
+      "presentation": {
+        "group": "01"
+      }
+    },
+    {
+      "name": "PlayerService (dll)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/src/PlayerService/bin/Debug/net10.0/BIS.PlayerService.dll",
+      "cwd": "${workspaceFolder}/backend/src/PlayerService",
+      "args": [],
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://0.0.0.0:5003"
+      },
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "Now listening on:.*http://[^\\s:]+:([0-9]+).*",
+        "uriFormat": "http://localhost:%s/swagger"
+      },
+      "presentation": {
+        "group": "01"
+      }
+    },
+    {
+      "name": "WebService (dll)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/src/WebService/bin/Debug/net10.0/BIS.WebService.dll",
+      "cwd": "${workspaceFolder}/backend/src/WebService",
+      "args": [],
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://0.0.0.0:5000"
+      },
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "Now listening on:.*http://[^\\s:]+:([0-9]+).*",
+        "uriFormat": "http://localhost:%s"
+      },
+      "presentation": {
+        "group": "01"
+      }
+    },
+    {
+      "name": "WorldService (dll)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/src/WorldService/bin/Debug/net10.0/BIS.WorldService.dll",
+      "cwd": "${workspaceFolder}/backend/src/WorldService",
+      "args": [],
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://0.0.0.0:5004"
+      },
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "Now listening on:.*http://[^\\s:]+:([0-9]+).*",
+        "uriFormat": "http://localhost:%s/swagger"
+      },
+      "presentation": {
+        "group": "01"
+      }
+    }
+  ]
+}

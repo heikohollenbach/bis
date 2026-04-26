@@ -157,6 +157,7 @@ xUnit + Moq; test projects are named `{Project}.Tests`.
 - Add XML doc comments to all public service and controller members.
 - Fix compiler warnings before building — `TreatWarningsAsErrors` is enabled in all projects.
 - Use `is null` / `is not null` for null checks.
+- Check the documentation of radzen for components and patterns when working on the WebService. <https://blazor.radzen.com/>
 
 ### ❌ DON'T
 
