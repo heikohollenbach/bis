@@ -5,38 +5,53 @@
 <RadzenStack Gap="1.5rem">
     <RadzenCard Variant="Variant.Filled" Style="padding: 2rem;">
         <RadzenStack Gap="0.75rem">
-            <RadzenText TextStyle="TextStyle.H2" TagName="TagName.H1">BIS - Being in Space</RadzenText>
+            <RadzenText TextStyle="TextStyle.H2" TagName="TagName.H1" Style="color: var(--color-primary-lt); font-size: clamp(1rem, 6vw, 2rem); white-space: nowrap;">
+                <RadzenIcon Icon="rocket" />
+                BIS - Being in Space
+            </RadzenText>
             <RadzenText TextStyle="TextStyle.Body1">
-                Erkunde das Universum, baue deine Existenz auf und ueberlebe im Weltraum.
+                Erkunde das Universum, baue deine Existenz auf und überlebe im Weltraum.
             </RadzenText>
             <RadzenStack Orientation="Orientation.Horizontal" Gap="0.75rem">
                 <a href="/auth/login"><RadzenButton Text="Jetzt starten" ButtonStyle="ButtonStyle.Primary" /></a>
-                <a href="/privacy"><RadzenButton Text="Mehr erfahren" ButtonStyle="ButtonStyle.Secondary" Variant="Variant.Outlined" /></a>
+                <a href="/privacy"><RadzenButton Text="Mehr erfahren" ButtonStyle="ButtonStyle.Secondary" /></a>
             </RadzenStack>
         </RadzenStack>
     </RadzenCard>
 
     <RadzenStack Gap="0.75rem">
-        <RadzenText TextStyle="TextStyle.H4" TagName="TagName.H2">Features</RadzenText>
+        <RadzenText TextStyle="TextStyle.H4" TagName="TagName.H2" Style="color: var(--color-primary-lt);">
+            <RadzenIcon Icon="star" />
+            Features
+        </RadzenText>
 
         <RadzenRow Gap="16px">
             <RadzenColumn Size="12" SizeMD="4">
                 <RadzenCard>
-                    <RadzenText TextStyle="TextStyle.H6" TagName="TagName.H3">Offene Galaxie</RadzenText>
-                    <RadzenText TextStyle="TextStyle.Body2">Reise frei durch ein dynamisches Universum mit unendlichen Moeglichkeiten.</RadzenText>
+                    <RadzenText TextStyle="TextStyle.H6" TagName="TagName.H3" Style="color: var(--color-primary-lt);">
+                        <RadzenIcon Icon="public" />
+                        Offene Galaxie
+                    </RadzenText>
+                    <RadzenText TextStyle="TextStyle.Body2">Reise frei durch ein dynamisches Universum mit unendlichen Möglichkeiten.</RadzenText>
                 </RadzenCard>
             </RadzenColumn>
 
             <RadzenColumn Size="12" SizeMD="4">
                 <RadzenCard>
-                    <RadzenText TextStyle="TextStyle.H6" TagName="TagName.H3">Echtzeit-System</RadzenText>
+                    <RadzenText TextStyle="TextStyle.H6" TagName="TagName.H3" Style="color: var(--color-primary-lt);">
+                        <RadzenIcon Icon="bolt" />
+                        Echtzeit-System
+                    </RadzenText>
                     <RadzenText TextStyle="TextStyle.Body2">Erlebe eine persistente Welt mit anderen Spielern und Live-Events.</RadzenText>
                 </RadzenCard>
             </RadzenColumn>
 
             <RadzenColumn Size="12" SizeMD="4">
                 <RadzenCard>
-                    <RadzenText TextStyle="TextStyle.H6" TagName="TagName.H3">Interstellar Travel</RadzenText>
+                    <RadzenText TextStyle="TextStyle.H6" TagName="TagName.H3" Style="color: var(--color-primary-lt);">
+                        <RadzenIcon Icon="rocket_launch" />
+                        Interstellar Travel
+                    </RadzenText>
                     <RadzenText TextStyle="TextStyle.Body2">Springe zwischen Sternensystemen und entdecke neue Welten.</RadzenText>
                 </RadzenCard>
             </RadzenColumn>
@@ -45,9 +60,12 @@
 
     <RadzenCard Style="padding: 1.5rem;">
         <RadzenStack Gap="0.5rem" AlignItems="AlignItems.Start">
-            <RadzenText TextStyle="TextStyle.H5" TagName="TagName.H2">Bereit fuer dein Abenteuer?</RadzenText>
-            <RadzenText TextStyle="TextStyle.Body2">Starte jetzt deine Reise im BIS-Universum.</RadzenText>
-            <a href="/auth/login"><RadzenButton Text="Account erstellen" Size="ButtonSize.Large" ButtonStyle="ButtonStyle.Primary" /></a>
+            <RadzenText TextStyle="TextStyle.H5" TagName="TagName.H2" Style="color: var(--color-primary-lt);">
+                <RadzenIcon Icon="person_add" />
+                Bereit für dein Abenteuer?
+            </RadzenText>
+            <RadzenText TextStyle="TextStyle.Body2">Starte jetzt deine Reise ins BIS-Universum.</RadzenText>
+            <a href="/auth/login"><RadzenButton Text="Account erstellen" ButtonStyle="ButtonStyle.Primary" /></a>
         </RadzenStack>
     </RadzenCard>
 </RadzenStack>

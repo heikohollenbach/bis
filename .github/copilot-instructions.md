@@ -12,11 +12,11 @@ description: "Workspace instructions for the project. Guides AI assistance"
 ## General Guidelines
 
 - Use emojis for task status
-  - 🔘 unknwon, not started, open
+  - 🔘 unknown, not started, open
   - 🟣 work in progress, started
   - 🟢 done
   - 🔴 blocked, needs attention
-  - 🟡 on hold, waiting for input, planed,
+  - 🟡 on hold, waiting for input, planned,
   - 🟤 won't do, rejected, closed
   - 🟠 duplicate, invalid
   - ⚫ other

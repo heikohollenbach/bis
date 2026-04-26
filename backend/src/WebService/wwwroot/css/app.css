@@ -1,0 +1,186 @@
+:root {
+  /* BIS core tokens */
+  --color-bg-base: #0d0d1a;
+  --color-bg-surface: #0f172a;
+  --color-bg-card: #1e1b4b;
+
+  --color-primary: #7c3aed;
+  --color-primary-lt: #8b5cf6;
+  --color-primary-dk: #5b21b6;
+  --color-primary-blend: #514fec;
+  --color-primary-blend-dk: #3b39c4;
+
+  --color-accent-cyan: #00aaff;
+  --color-accent-gold: #f4a900;
+  --color-accent-neon: #39ff14;
+
+  --color-enemy: #ff2020;
+  --color-enemy-lt: #ff6b6b;
+  --color-enemy-dk: #991b1b;
+
+  --color-guild: #15803d;
+  --color-guild-lt: #4ade80;
+  --color-guild-dk: #14532d;
+
+  --color-neutral: #2563eb;
+  --color-neutral-lt: #93c5fd;
+  --color-neutral-dk: #1e3a5f;
+
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #475569;
+
+  --color-border: #334155;
+
+  --color-success: #16a34a;
+  --color-warning: #d97706;
+  --color-danger: #b91c1c;
+  --color-info: #0284c7;
+
+  /* Radzen token mapping (Material base overrides) */
+  --rz-primary: var(--color-primary);
+  --rz-secondary: var(--color-primary-blend);
+  --rz-success: var(--color-success);
+  --rz-warning: var(--color-warning);
+  --rz-danger: var(--color-danger);
+  --rz-info: var(--color-info);
+
+  --rz-text-color: var(--color-text-primary);
+  --rz-text-secondary-color: var(--color-text-secondary);
+  --rz-base-background-color: var(--color-bg-base);
+  --rz-body-background-color: var(--color-bg-base);
+  --rz-content-background-color: var(--color-bg-surface);
+  --rz-panel-background-color: var(--color-bg-card);
+  --rz-border-color: var(--color-border);
+  --rz-link-hover-text-decoration: none;
+
+  --font-heading: "Space Mono", monospace;
+  --font-body: "Space Mono", monospace;
+}
+
+html,
+body {
+  background: var(--color-bg-base);
+  color: var(--color-text-primary);
+}
+
+a,
+a:visited {
+  color: var(--color-accent-cyan);
+}
+
+a:hover,
+a:focus {
+  color: var(--color-primary-dk);
+}
+
+.rz-layout,
+.rz-body {
+  background-color: transparent;
+}
+
+.rz-header,
+.rz-footer {
+  background-color: var(--color-primary);
+  border-color: var(--color-border);
+  backdrop-filter: blur(6px);
+}
+
+.rz-footer {
+  background-color: var(--color-bg-base);
+}
+
+.rz-card {
+  background: linear-gradient(160deg, rgba(30, 27, 75, 0.95) 0%, rgba(15, 23, 42, 0.95) 100%);
+  border: 1px solid var(--color-border);
+}
+
+.rz-button.rz-primary:hover {
+  background-color: var(--color-primary-dk);
+}
+
+.rz-button.rz-secondary:hover {
+  background-color: var(--color-primary-blend-dk);
+}
+
+.rz-button.rz-variant-outlined.rz-secondary.rz-button.rz-variant-outlined.rz-secondary:hover {
+  background-color: var(--color-neutral-dk);
+  color: var(--color-primary-blend);
+}
+
+.rz-alert-danger {
+  border-color: var(--color-danger);
+  background-color: rgba(185, 28, 28, 0.18);
+  color: var(--color-text-primary);
+}
+
+.rz-text,
+.rz-text-h1,
+.rz-text-h2,
+.rz-text-h3,
+.rz-text-h4,
+.rz-text-h5,
+.rz-text-h6,
+.rz-text-body1,
+.rz-text-body2,
+.rz-card .rz-text,
+.rz-card .rz-text-h1,
+.rz-card .rz-text-h2,
+.rz-card .rz-text-h3,
+.rz-card .rz-text-h4,
+.rz-card .rz-text-h5,
+.rz-card .rz-text-h6,
+.rz-card .rz-text-body1,
+.rz-card .rz-text-body2 {
+  color: var(--color-text-primary);
+}
+
+body,
+p,
+li,
+label,
+input,
+textarea,
+select,
+button,
+.rz-text,
+.rz-text-body1,
+.rz-text-body2,
+.rz-link,
+.rz-button {
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.rz-text-h1,
+.rz-text-h2,
+.rz-text-h3,
+.rz-text-h4,
+.rz-text-h5,
+.rz-text-h6 {
+  font-family: var(--font-heading);
+}
+
+h1:focus-visible,
+h2:focus-visible,
+h3:focus-visible,
+h4:focus-visible,
+h5:focus-visible,
+h6:focus-visible,
+p:focus-visible,
+span:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Icons inherit the font-size of their surrounding text */
+.rzi {
+  font-size: 1em;
+  line-height: 1;
+  vertical-align: -0.15em;
+}
