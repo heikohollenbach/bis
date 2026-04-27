@@ -22,7 +22,11 @@
       "**/bin": true,
       "**/obj": true,
     },
+    "markdownlint.config": {
+      "MD036": false,
+    },
     "peacock.color": "#7C3AED",
+    "workbench.colorTheme": "Dark 2026",
     "workbench.colorCustomizations": {
       "activityBar.activeBackground": "#9b69f1",
       "activityBar.background": "#9b69f1",
@@ -40,7 +44,7 @@
       "titleBar.activeBackground": "#7c3aed",
       "titleBar.activeForeground": "#e7e7e7",
       "titleBar.inactiveBackground": "#7c3aed99",
-      "titleBar.inactiveForeground": "#e7e7e799"
+      "titleBar.inactiveForeground": "#e7e7e799",
     },
   },
   "extensions": {
