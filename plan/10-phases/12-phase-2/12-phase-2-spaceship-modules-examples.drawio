@@ -1,0 +1,94 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="-8RM0SqlrxbCreME1hFQ">
+    <mxGraphModel dx="4440" dy="3694" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pB8d1LNLpkvUL7_nOY24-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="Core Structure" vertex="1">
+          <mxGeometry height="200" width="200" x="-100" y="-850" as="geometry" />
+        </mxCell>
+        <mxCell id="ti_ESWdBYUgyhpSVEWXd-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Reactor" vertex="1">
+          <mxGeometry height="200" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ti_ESWdBYUgyhpSVEWXd-33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Weapon" vertex="1">
+          <mxGeometry height="200" width="200" y="-200" as="geometry" />
+        </mxCell>
+        <mxCell id="ti_ESWdBYUgyhpSVEWXd-34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Cargo" vertex="1">
+          <mxGeometry height="200" width="200" x="-200" as="geometry" />
+        </mxCell>
+        <mxCell id="ti_ESWdBYUgyhpSVEWXd-35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Habitat" vertex="1">
+          <mxGeometry height="200" width="200" x="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ti_ESWdBYUgyhpSVEWXd-61" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.orthogonal_triangle;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="" vertex="1">
+          <mxGeometry height="200" width="200" x="200" y="-200" as="geometry" />
+        </mxCell>
+        <mxCell id="ti_ESWdBYUgyhpSVEWXd-83" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.orthogonal_triangle;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;rotation=270;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="" vertex="1">
+          <mxGeometry height="200" width="200" x="-200" y="-200" as="geometry" />
+        </mxCell>
+        <mxCell id="8tdeT0O2-FssY48AxTJU-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Engine" vertex="1">
+          <mxGeometry height="200" width="200" x="200" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="8tdeT0O2-FssY48AxTJU-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Engine" vertex="1">
+          <mxGeometry height="200" width="200" x="-200" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="8tdeT0O2-FssY48AxTJU-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Reactor" vertex="1">
+          <mxGeometry height="200" width="200" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="8tdeT0O2-FssY48AxTJU-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Engine" vertex="1">
+          <mxGeometry height="200" width="200" x="1150" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="8tdeT0O2-FssY48AxTJU-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Engine" vertex="1">
+          <mxGeometry height="200" width="200" x="950" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="8tdeT0O2-FssY48AxTJU-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Habitat" vertex="1">
+          <mxGeometry height="200" width="200" x="750" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8tdeT0O2-FssY48AxTJU-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Cargo" vertex="1">
+          <mxGeometry height="200" width="200" x="1350" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8tdeT0O2-FssY48AxTJU-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Reactor" vertex="1">
+          <mxGeometry height="200" width="200" x="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="8tdeT0O2-FssY48AxTJU-10" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.orthogonal_triangle;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="" vertex="1">
+          <mxGeometry height="200" width="200" x="1350" y="-100" as="geometry" />
+        </mxCell>
+        <mxCell id="8tdeT0O2-FssY48AxTJU-11" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.orthogonal_triangle;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;rotation=270;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="" vertex="1">
+          <mxGeometry height="200" width="200" x="750" y="-100" as="geometry" />
+        </mxCell>
+        <mxCell id="8tdeT0O2-FssY48AxTJU-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Weapon" vertex="1">
+          <mxGeometry height="200" width="200" x="950" y="-200" as="geometry" />
+        </mxCell>
+        <mxCell id="8tdeT0O2-FssY48AxTJU-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Weapon" vertex="1">
+          <mxGeometry height="200" width="200" x="1150" y="-200" as="geometry" />
+        </mxCell>
+        <mxCell id="8tdeT0O2-FssY48AxTJU-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Reactor" vertex="1">
+          <mxGeometry height="200" width="200" x="950" as="geometry" />
+        </mxCell>
+        <mxCell id="8tdeT0O2-FssY48AxTJU-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Habitat" vertex="1">
+          <mxGeometry height="200" width="200" x="750" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="8tdeT0O2-FssY48AxTJU-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Engine" vertex="1">
+          <mxGeometry height="200" width="200" x="950" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="8tdeT0O2-FssY48AxTJU-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Engine" vertex="1">
+          <mxGeometry height="200" width="200" x="1150" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="8tdeT0O2-FssY48AxTJU-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Cargo" vertex="1">
+          <mxGeometry height="200" width="200" x="1350" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="8tdeT0O2-FssY48AxTJU-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Engine" vertex="1">
+          <mxGeometry height="200" width="100" x="1700" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="8tdeT0O2-FssY48AxTJU-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Cargo" vertex="1">
+          <mxGeometry height="200" width="200" x="1800" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="8tdeT0O2-FssY48AxTJU-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="" vertex="1">
+          <mxGeometry height="200" width="200" x="2000" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="8tdeT0O2-FssY48AxTJU-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Weapon" vertex="1">
+          <mxGeometry height="200" width="100" x="2200" y="600" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
