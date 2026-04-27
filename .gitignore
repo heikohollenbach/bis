@@ -25,3 +25,4 @@ client/[Uu]ser[Ss]ettings/
 client/*.sln
 client/*.slnx
 client/*.csproj
+client/Assets/Joystick Pack/*

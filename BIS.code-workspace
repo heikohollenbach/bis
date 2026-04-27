@@ -13,6 +13,11 @@
     },
     "editor.linkedEditing": true,
     "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+      "*.cs": "${capture}.cs.meta",
+      "*.unity": "${capture}.unity.meta",
+      "*.asset": "${capture}.asset.meta",
+    },
     "containers.containers.groupBy": "Compose Project Name",
     "containers.containers.label": "ContainerName",
     "containers.containers.description": ["Image", "Status"],
