@@ -44,7 +44,7 @@
       "titleBar.activeBackground": "#7c3aed",
       "titleBar.activeForeground": "#e7e7e7",
       "titleBar.inactiveBackground": "#7c3aed99",
-      "titleBar.inactiveForeground": "#e7e7e799",
+      "titleBar.inactiveForeground": "#e7e7e799"
     },
   },
   "extensions": {
@@ -63,6 +63,7 @@
       "tchayen.markdown-links",
       "visualstudiotoolsforunity.vstuc",
       "slevesque.vscode-3dviewer",
+      "mhutchie.git-graph",
     ],
   },
 }
