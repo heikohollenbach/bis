@@ -14,3 +14,14 @@ obj/
 .ncrunchproject
 .ncrunchsolution
 packages/
+
+# Unity
+client/[Ll]ibrary/
+client/[Tt]emp/
+client/[Bb]uild/
+client/[Bb]uilds/
+client/[Ll]ogs/
+client/[Uu]ser[Ss]ettings/
+client/*.sln
+client/*.slnx
+client/*.csproj
